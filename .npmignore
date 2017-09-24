@@ -1,0 +1,29 @@
+# IDEA
+.idea
+*.iml
+
+# VSCode
+.vscode
+
+# Node
+node_modules
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+
+# Build & Distribution
+build
+dist
+
+# Test
+test
+coverage
+
+# Npm Publish
+.eslintrc
+.babelrc
+.editorconfig
+.coveralls.yml
+.travis.yml
