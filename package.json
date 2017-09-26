@@ -1,9 +1,21 @@
 {
   "name": "karma-jawr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "karma jawr framework integration",
   "main": "lib/index.js",
   "repository": "https://github.com/Aquariuslt/karma-jawr",
   "author": "Aquariuslt<superaquariuslt@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "karma",
+    "jawr"
+  ],
+  "scripts": {
+    "test": "gulp test"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^0.4.6",
+    "gulp-util": "^3.0.8"
+  }
 }

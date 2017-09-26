@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:jawr="https://jawr.java.net/jsf/facelets">
+<head>
+  <title>Spring + JAWR + Ext 3 Sample Page</title>
+
+  <jawr:style src="/cssBundles/ext.css"/>
+  <jawr:script src="/jsBundles/extJs.js"/>
+  <jawr:script src="/jsBundles/home.js"/>
+</head>
+
+<body>
+
+<script type="text/javascript">
+  Ext.onReady(function() {
+    Ext.QuickTips.init();
+    new agile.example.app.Home({
+      renderTo: Ext.getBody()
+    });
+  });
+</script>
+</body>
+</html>

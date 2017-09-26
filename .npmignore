@@ -18,7 +18,7 @@ build
 dist
 
 # Test
-test
+src/test
 coverage
 
 # Npm Publish
@@ -27,3 +27,7 @@ coverage
 .editorconfig
 .coveralls.yml
 .travis.yml
+
+# Gulp Tasks
+gulpfile.js
+tasks

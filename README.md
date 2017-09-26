@@ -1,11 +1,18 @@
-# Karma JAWR Processor
+# Karma JAWR
 
-An karma preprocessor helping resolving jawr.properties or spring config xml
+Karma + JAWR Integration.
 
 
-## Features 
 
-- Parse `jawr.properties` and generated global jawrLoader for loading tasks.
-- Helping resolve jawr.loader from mappings before each karma unit test cases.
+## TODO
+
+### JAWR Options
+
+- **configLocation**: Absolute path, point to `jawr.properties` or `spring-jawr-context.xml`
+- **configType**: FileType, `properties` or `xml`
+- **webappRoot**: Absolute path, point to webapp root, for loading `jawr.properties` path prefix.
+
+
+
 
 
