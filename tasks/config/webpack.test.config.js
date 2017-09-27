@@ -20,7 +20,7 @@ module.exports = {
         enforce: 'post',
         test: /\.js$/,
         include: [
-          pathUtil.resolve('src/test/js/build')
+          pathUtil.resolve('src/main/webapp')
         ],
         exclude: [
           /node_modules/,
