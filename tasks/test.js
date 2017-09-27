@@ -1,6 +1,16 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
+var karma = require('karma');
+var sequence = require('gulp-sequence');
 
-gulp.task('test', function() {
+var pathUtil = require('./utils/path.util');
 
+var Server = karma.Server;
+
+gulp.task('ext:unittest', function(done) {
+  new Server({
+    configFile: pathUtil.resolve('tasks/config') + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
 });
+
+gulp.task('test', sequence(['ext:unittest']));
