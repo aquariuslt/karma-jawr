@@ -14,6 +14,11 @@ describe('ext', function() {
   });
 
   it('check extjs is loaded', function() {
+    var expectExtVersion = '3.3.1';
+    expect(Ext.version).to.eq(expectExtVersion);
+  });
 
+  it('expect home ui is rendered', function() {
+    expect(Ext.getCmp('app.home')).not.to.eq(undefined);
   });
 });
