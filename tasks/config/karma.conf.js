@@ -9,6 +9,7 @@ var revisionInfo = Downloader.revisionInfo(Downloader.currentPlatform(), Chromiu
 process.env.CHROMIUM_BIN = revisionInfo.executablePath;
 
 var localJawrFramework = require('../../lib');
+var webpackTestConfig = require('./webpack.test.config');
 var pathUtil = require('../utils/path.util');
 
 module.exports = function(config) {
@@ -20,22 +21,54 @@ module.exports = function(config) {
       'karma-chrome-launcher',
       'karma-mocha',
       'karma-spec-reporter',
+      'karma-coverage',
+      'karma-coverage-istanbul-reporter',
+      'karma-sourcemap-loader',
+      'karma-sinon-chai',
+      'karma-coverage',
+      'karma-coverage-istanbul-reporter',
+      'karma-webpack',
       localJawrFramework
     ],
     frameworks: [
       'jawr',
-      'mocha'
+      'mocha',
+      'sinon-chai'
     ],
     files: [
       pathUtil.resolve('src/test/js/unit/specs') + '/**/*.spec.js'
     ],
     reporters: [
-      'spec'
+      'spec',
+      'coverage-istanbul'
     ],
+    preprocessors: {
+      '/**/*.spec.js': ['webpack', 'sourcemap']
+    },
     jawr: {
       configLocation: pathUtil.resolve('src/main/webapp/jawr/') + 'jawr.properties',
-      webappLocation: pathUtil.resolve('src/main/webapp/'),
+      webappLocation: pathUtil.resolve('src/main/webapp'),
       targetLocation: pathUtil.resolve('src/test/js/build')
+    },
+    webpack: webpackTestConfig,
+    webpackMiddleware: {
+      stats: 'errors-only',
+      noInfo: true
+    },
+    coverageIstanbulReporter: {
+      dir: pathUtil.resolve('src/test/js/unit') + '/coverage',
+      reports: ['html', 'lcovonly', 'text-summary'],
+      fixWebpackSourcePaths: true,
+      skipFilesWithNoCoverage: true,
+      thresholds: {
+        emitWarning: false,
+        global: {
+          statements: 1,
+          lines: 1,
+          branches: 1,
+          functions: 1
+        }
+      }
     }
   });
 };
