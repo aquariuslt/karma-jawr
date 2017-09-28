@@ -45,7 +45,7 @@ module.exports = function(config) {
     preprocessors: {
       '/**/*.spec.js': ['webpack', 'sourcemap']
     },
-    logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_INFO,
     jawr: {
       configLocation: pathUtil.resolve('src/main/resources/jawr/') + 'jawr.properties',
       webappLocation: pathUtil.resolve('src/main/webapp'),
