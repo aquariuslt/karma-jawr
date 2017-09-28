@@ -15,11 +15,11 @@ Karma + JAWR Integration.
 - **configLocation**: Absolute path, point to `jawr.properties` or `spring-jawr-context.xml`
 - **webappLocation**: Absolute path, point to your maven war project `webapp` folder
 - **targetLocation**: Absolute path, point to a temp build folder, for require syntax
+- **localeConfigLocation**: Absolute path, optional, if using jawr message generator and using `messages:` 
+syntax in jawr properties file, suppose to pre-generate by resources bundle and add as global serving files in the karma config.files.
+
 
 ### Example
-
-
-
 
 
 

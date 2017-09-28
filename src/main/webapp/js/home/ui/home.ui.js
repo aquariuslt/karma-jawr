@@ -17,7 +17,18 @@ agile.example.app.HomeUi = Ext.extend(Ext.Viewport, {
             layout: 'form',
             height: 100,
             width: '100%',
-            hideBorders: true
+            hideBorders: true,
+            items: [
+              {
+                xtype: 'label',
+                // text: agile.home.title(),
+                text: 'Sample Title',
+                style: {
+                  'font-family': '"Tahoma"',
+                  'font-size': '30px'
+                }
+              }
+            ]
           },
           {
             xtype: 'panel',
