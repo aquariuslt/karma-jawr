@@ -49,7 +49,8 @@ module.exports = function(config) {
     jawr: {
       configLocation: pathUtil.resolve('src/main/resources/jawr/') + 'jawr.properties',
       webappLocation: pathUtil.resolve('src/main/webapp'),
-      targetLocation: pathUtil.resolve('src/test/js/build')
+      targetLocation: pathUtil.resolve('src/test/js/build'),
+      localeConfigLocation: pathUtil.resolve('src/main/resources')
     },
     webpack: webpackTestConfig,
     webpackMiddleware: {
