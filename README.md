@@ -7,7 +7,19 @@
 
 Karma + JAWR Integration.
 
-### Concert
+### Concert & Situations
+
+When you are using J2EE for your web application and using server-render template engine (JSP,JSF,Freemarker,Velocity), you might using some web resource bundling solution.
+
+`JAWR` used to be a JavaEE official web resource packing solution in Java way.
+
+But how can we setup a universal unittest way for JAWR style loading resource way?
+
+If you are noticed `karma` is popular with managing frontend javascript side and easily integrated with reporters and CI.
+
+Here is a karma-plugin to help you generate some `commonjs` style temp file by parsing `jawr.properties`.
+So that you can use webpack or other preprocessor for writing frontend unittest in a graceful way.
+
 
 
 ### JAWR Options
@@ -19,7 +31,55 @@ Karma + JAWR Integration.
 syntax in jawr properties file, suppose to pre-generate by resources bundle and add as global serving files in the karma config.files.
 
 
-### Example
+### Usage
+
+#### Installation
+
+```bash
+$ yarn add -D karma-jawr
+```
+
+
+#### Karma Configuration
+1. Add `karma-jawr` as loaded plugin and framework
+
+```
+plugins:[
+  ....,
+  'karma-jawr'
+]
+frameworks: [
+  ...,
+  'jawr'
+],
+```
+
+2. Add `jawr` for `karma-jawr` options
+to spec the location for your `jawr.properties`, `webapp` folder for building war, template generate folder for you customize gitignore path.
+using mandatory fields `configLocation`,`webappLocation`,`targetLocation`.
+
+the value must be absolute path.
+```
+jawr: {
+  configLocation: pathUtil.resolve('src/main/resources/jawr/') + 'jawr.properties',
+  webappLocation: pathUtil.resolve('src/main/webapp'),
+  targetLocation: pathUtil.resolve('src/test/js/build')
+}
+```
+
+> If you are using jawr provided locale generator for frontend locale string
+> You can also add `localeConfigLocation` for locating your locale bundle resources.
+
+#### Sample Project 
+
+You can refer to this sample project.
+It using last generation J2EE way web application.
+
+Using `SpringMVC` + `JSF` + `JAWR` + `ExtJs` for building a deployable war file.
+
+And Integrated with travis.ci and coveralls.io for CI.
+
+[Spring-Jawr-Ext3](https://github.com/Aquariuslt/spring-jawr-ext)
 
 
 

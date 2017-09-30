@@ -11,7 +11,6 @@ agile.example.app.Home = Ext.extend(agile.example.app.HomeUi, {
 
   // test unused method
   initEventHandlers: function() {
-
   }
 
 });
