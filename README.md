@@ -85,6 +85,9 @@ And Integrated with travis.ci and coveralls.io for CI.
 
 ### Change Log
 
+#### 0.1.5
+- Fix non-composite child key calculate not including itself defects
+
 #### 0.1.4
 
 - Fix locale generator generate function key-value duplicate error
