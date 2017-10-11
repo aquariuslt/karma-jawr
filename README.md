@@ -85,6 +85,9 @@ And Integrated with travis.ci and coveralls.io for CI.
 
 ### Change Log
 
+#### 0.1.6
+- Fix non-primitive value in locale message properties can not be parse defects.
+
 #### 0.1.5
 - Fix non-composite child key calculate not including itself defects
 
