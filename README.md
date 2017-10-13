@@ -47,7 +47,7 @@ $ yarn add -D karma-jawr
 plugins:[
   ....,
   'karma-jawr'
-]
+],
 frameworks: [
   ...,
   'jawr'
@@ -85,13 +85,18 @@ And Integrated with travis.ci and coveralls.io for CI.
 
 ### Change Log
 
+#### 0.1.7
+- New features: Add css bundle support, for better requiring style file for debug in browser.
+- Change log level to `debug` when generating flatten mapping files for ignoring more files.
+- Mini refactor JawrContext design.
+
 #### 0.1.6
 - Fix non-primitive value in locale message properties can not be parse defects.
 
 #### 0.1.5
-- Fix non-composite child key calculate not including itself defects
+- Fix non-composite child key calculate not including itself defects.
 
 #### 0.1.4
 
-- Fix locale generator generate function key-value duplicate error
-- Fix locale message mapping detect and filter function
+- Fix locale generator generate function key-value duplicate error.
+- Fix locale message mapping detect and filter function.

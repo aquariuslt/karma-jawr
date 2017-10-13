@@ -1,6 +1,7 @@
 /** Created by CUIJA on 2017-09-27.*/
 require('@/jsBundles/extJs.js/');
 require('@/jsBundles/home.js/');
+require('@/cssBundles/ext.css/');
 
 describe('ext', function() {
 

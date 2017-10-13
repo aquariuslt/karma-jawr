@@ -17,6 +17,26 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/,
+        include: [
+          pathUtil.resolve('src/main/webapp')
+        ],
+        exclude: [
+          /node_modules/
+        ],
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|ico)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 1000,
+          useRelativePath: true,
+          publicPath: './',
+          name: '[name].[ext]'
+        }
+      },
+      {
         enforce: 'post',
         test: /\.js$/,
         include: [
