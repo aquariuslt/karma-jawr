@@ -23,11 +23,13 @@ src/test
 coverage
 
 # Npm Publish
+.github
 .eslintrc
 .babelrc
 .editorconfig
 .coveralls.yml
 .travis.yml
+CODE_OF_CONDUCT.md
 
 # Gulp Tasks
 gulpfile.js

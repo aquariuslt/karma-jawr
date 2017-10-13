@@ -82,6 +82,10 @@ And Integrated with travis.ci and coveralls.io for CI.
 [Spring-Jawr-Ext3](https://github.com/Aquariuslt/spring-jawr-ext)
 
 
+#### Document And Design
+
+Please refer to [wiki](https://github.com/Aquariuslt/karma-jawr/wiki)
+
 
 ### Change Log
 
