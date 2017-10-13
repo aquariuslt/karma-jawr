@@ -19,7 +19,8 @@ module.exports = {
       {
         test: /\.css$/,
         include: [
-          pathUtil.resolve('src/main/webapp')
+          pathUtil.resolve('src/main/webapp'),
+          pathUtil.resolve('src/test/js/unit/specs')
         ],
         exclude: [
           /node_modules/
