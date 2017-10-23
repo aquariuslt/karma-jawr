@@ -20,6 +20,9 @@ declare interface JawrContext {
   messageBundleFlattenMappings?: JawrMessageBundleFlattenMappings;//jawr locale messages flatten mappings
 
 
+  /* flags */
+  skipGenerate?: boolean;                                         //default false, true to skip generating index files
+
   getRegisteredJsBundleKeys?(): Array;
 
   getLocaleJsBundles?(): Array;

@@ -89,6 +89,9 @@ Please refer to [wiki](https://github.com/Aquariuslt/karma-jawr/wiki)
 
 ### Change Log
 
+#### 0.1.8
+- Performance Tuning: Suppose not generate twice index files when all flatten mapping files no change since last time
+
 #### 0.1.7
 - New features: Add css bundle support, for better requiring style file for debug in browser.
 - Change log level to `debug` when generating flatten mapping files for ignoring more files.
