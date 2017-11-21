@@ -89,6 +89,9 @@ Please refer to [wiki](https://github.com/Aquariuslt/karma-jawr/wiki)
 
 ### Change Log
 
+#### 0.1.9
+- Fix when mappings in jawr properties including jawr bundle, can not generate correct index.js
+
 #### 0.1.8
 - Performance Tuning: Suppose not generate twice index files when all flatten mapping files no change since last time
 
