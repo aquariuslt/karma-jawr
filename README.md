@@ -89,6 +89,16 @@ Please refer to [wiki](https://github.com/Aquariuslt/karma-jawr/wiki)
 
 ### Change Log
 
+#### 0.1.12
+- Fix defect when locale properties contains empty value while `properties` default parsed to null
+
+#### 0.1.11
+- Update .last-mappings.json path display, normalizing.
+
+#### 0.1.10
+- Update log level from info to debug.
+- Fix defect when combine bundle jawr bundle names.
+
 #### 0.1.9
 - Fix when mappings in jawr properties including jawr bundle, can not generate correct index.js
 
