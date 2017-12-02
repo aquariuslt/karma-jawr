@@ -29,8 +29,6 @@ coverage
 .editorconfig
 .coveralls.yml
 .travis.yml
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
 
 # Gulp Tasks
 gulpfile.js
