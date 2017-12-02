@@ -19,12 +19,13 @@ module.exports = function(config) {
     ],
     plugins: [
       'karma-chrome-launcher',
+      'karma-chai',
       'karma-mocha',
       'karma-spec-reporter',
       'karma-coverage',
       'karma-coverage-istanbul-reporter',
       'karma-sourcemap-loader',
-      'karma-sinon-chai',
+      'karma-sinon',
       'karma-coverage',
       'karma-coverage-istanbul-reporter',
       'karma-webpack',
@@ -33,7 +34,8 @@ module.exports = function(config) {
     frameworks: [
       'jawr',
       'mocha',
-      'sinon-chai'
+      'sinon',
+      'chai'
     ],
     files: [
       pathUtil.resolve('src/test/js/unit/specs') + '/**/*.spec.js'
@@ -58,7 +60,7 @@ module.exports = function(config) {
       noInfo: true
     },
     coverageIstanbulReporter: {
-      dir: pathUtil.resolve('src/test/js/unit') + '/coverage',
+      dir: pathUtil.resolve('test/unit') + '/coverage',
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true,
       skipFilesWithNoCoverage: true,
