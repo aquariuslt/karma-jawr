@@ -60,7 +60,7 @@ module.exports = function(config) {
       noInfo: true
     },
     coverageIstanbulReporter: {
-      dir: pathUtil.resolve('test/unit') + '/coverage',
+      dir: pathUtil.resolve('src/test/unit') + '/coverage',
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true,
       skipFilesWithNoCoverage: true,
