@@ -1,6 +1,6 @@
 {
   "name": "karma-jawr",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "karma jawr framework integration",
   "main": "lib/index.js",
   "repository": "https://github.com/Aquariuslt/karma-jawr",
