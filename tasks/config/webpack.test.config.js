@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     path: pathUtil.resolve('target'),
-    filename: `${pkg.name}.test.js`
+    filename: pkg.name + '.test.js'
   },
   module: {
     rules: [
