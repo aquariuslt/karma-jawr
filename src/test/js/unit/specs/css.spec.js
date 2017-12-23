@@ -1,4 +1,4 @@
-require('@/cssBundles/ext.css/');
+require('@/cssBundles/ext.css');
 
 describe('css', function() {
 
