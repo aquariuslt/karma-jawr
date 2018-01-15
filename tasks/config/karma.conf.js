@@ -1,16 +1,12 @@
 /** Created by CUIJA on 2017-09-27.*/
 
-
-var puppeteerPkg = require('puppeteer/package.json');
-var Downloader = require('puppeteer/utils/ChromiumDownloader');
-
-var ChromiumRevision = puppeteerPkg['puppeteer']['chromium_revision'];
-var revisionInfo = Downloader.revisionInfo(Downloader.currentPlatform(), ChromiumRevision);
-process.env.CHROMIUM_BIN = revisionInfo.executablePath;
-
 var localJawrFramework = require('../../lib');
 var webpackTestConfig = require('./webpack.test.config');
 var pathUtil = require('../utils/path.util');
+
+var puppeteer = require('puppeteer');
+process.env.CHROMIUM_BIN = puppeteer.executablePath();
+
 
 module.exports = function(config) {
   config.set({
