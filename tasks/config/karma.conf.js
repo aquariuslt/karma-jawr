@@ -10,8 +10,14 @@ process.env.CHROMIUM_BIN = puppeteer.executablePath();
 
 module.exports = function(config) {
   config.set({
+    customLaunchers: {
+      ChromiumHeadlessNoSandbox: {
+        base: 'ChromiumHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     browsers: [
-      'ChromiumHeadless'
+      'ChromiumHeadlessNoSandbox'
     ],
     plugins: [
       'karma-chrome-launcher',
