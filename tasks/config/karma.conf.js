@@ -28,8 +28,6 @@ module.exports = function(config) {
       'karma-coverage-istanbul-reporter',
       'karma-sourcemap-loader',
       'karma-sinon',
-      'karma-coverage',
-      'karma-coverage-istanbul-reporter',
       'karma-webpack',
       localJawrFramework
     ],
