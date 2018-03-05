@@ -1,8 +1,8 @@
 # Karma JAWR
 
 [![npm](https://img.shields.io/npm/v/karma-jawr.svg)](https://www.npmjs.com/package/karma-jawr)
-[![Build Status](https://travis-ci.org/Aquariuslt/karma-jawr.svg?branch=master)](https://travis-ci.org/Aquariuslt/karma-jawr)
-[![Coverage Status](https://coveralls.io/repos/github/Aquariuslt/karma-jawr/badge.svg?branch=master)](https://coveralls.io/github/Aquariuslt/karma-jawr?branch=master)
+[![Build Status](https://travis-ci.org/aquariuslt/karma-jawr.svg?branch=master)](https://travis-ci.org/aquariuslt/karma-jawr)
+[![Coverage Status](https://coveralls.io/repos/github/aquariuslt/karma-jawr/badge.svg?branch=master)](https://coveralls.io/github/aquariuslt/karma-jawr?branch=master)
 
 
 Karma + JAWR Integration.
