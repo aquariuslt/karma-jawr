@@ -79,15 +79,18 @@ Using `SpringMVC` + `JSF` + `JAWR` + `ExtJs` for building a deployable war file.
 
 And Integrated with travis.ci and coveralls.io for CI.
 
-[Spring-Jawr-Ext3](https://github.com/Aquariuslt/spring-jawr-ext)
+[Spring-Jawr-Ext3](https://github.com/aquariuslt/spring-jawr-ext)
 
 
 #### Document And Design
 
-Please refer to [wiki](https://github.com/Aquariuslt/karma-jawr/wiki)
+Please refer to [wiki](https://github.com/aquariuslt/karma-jawr/wiki)
 
 
 ### Change Log
+
+#### 0.1.13
+- Update Dependencies version, and README content at npm
 
 #### 0.1.12
 - Fix defect when locale properties contains empty value while `properties` default parsed to null
