@@ -2,6 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/karma-jawr.svg)](https://www.npmjs.com/package/karma-jawr)
 [![Build Status](https://travis-ci.org/aquariuslt/karma-jawr.svg?branch=master)](https://travis-ci.org/aquariuslt/karma-jawr)
+[![Circle CI Status](https://circleci.com/gh/aquariuslt/karma-jawr.svg?branch=master&style=shield)](https://github.com/aquariuslt/karma-jawr)
 [![Coverage Status](https://coveralls.io/repos/github/aquariuslt/karma-jawr/badge.svg?branch=master)](https://coveralls.io/github/aquariuslt/karma-jawr?branch=master)
 
 
