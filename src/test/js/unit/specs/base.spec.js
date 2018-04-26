@@ -7,7 +7,7 @@ describe('ext', function() {
   before(function() {
     Ext.onReady(function() {
       Ext.QuickTips.init();
-      new agile.example.app.Home({
+      new karma.jawr.sample.app.Home({
         renderTo: Ext.getBody()
       });
     });

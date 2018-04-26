@@ -1,7 +1,7 @@
 /** Created by CUIJA on 2017-09-22.*/
-Ext.namespace('agile.example.app');
+Ext.namespace('karma.jawr.sample.app');
 
-agile.example.app.HomeUi = Ext.extend(Ext.Viewport, {
+karma.jawr.sample.app.HomeUi = Ext.extend(Ext.Viewport, {
   layout: 'fit',
   id: 'app.home',
   initComponent: function() {
@@ -21,7 +21,7 @@ agile.example.app.HomeUi = Ext.extend(Ext.Viewport, {
             items: [
               {
                 xtype: 'label',
-                text: locale.home.subtitle('Agile'),
+                text: locale.home.subtitle('Karma Jawr'),
                 style: {
                   'font-family': '"Tahoma"',
                   'font-size': '30px'
@@ -31,14 +31,14 @@ agile.example.app.HomeUi = Ext.extend(Ext.Viewport, {
           },
           {
             xtype: 'panel',
-            title: 'Agile Page Content',
+            title: 'Karma Jawr Sample Page Content',
             layout: 'form',
             width: '100%'
           }
         ]
       }
     ];
-    agile.example.app.HomeUi.superclass.initComponent.call(this);
+    karma.jawr.sample.app.HomeUi.superclass.initComponent.call(this);
   }
 });
 

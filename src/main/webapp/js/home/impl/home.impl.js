@@ -1,10 +1,10 @@
 /** Created by CUIJA on 2017-09-22.*/
-Ext.namespace('agile.example.app');
+Ext.namespace('karma.jawr.sample.app');
 
-agile.example.app.Home = Ext.extend(agile.example.app.HomeUi, {
+karma.jawr.sample.app.Home = Ext.extend(karma.jawr.sample.app.HomeUi, {
   initComponent: function() {
     var $this = this;
-    agile.example.app.Home.superclass.initComponent.call($this);
+    karma.jawr.sample.app.Home.superclass.initComponent.call($this);
 
     $this.initEventHandlers();
   },
@@ -15,7 +15,7 @@ agile.example.app.Home = Ext.extend(agile.example.app.HomeUi, {
 
 });
 
-Ext.ComponentMgr.registerType('agile.example.app.Home', agile.example.app.Home);
+Ext.ComponentMgr.registerType('karma.jawr.sample.app.Home', karma.jawr.sample.app.Home);
 
 
 
