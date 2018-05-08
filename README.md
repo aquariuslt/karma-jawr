@@ -80,7 +80,7 @@ Using `SpringMVC` + `JSF` + `JAWR` + `ExtJs` for building a deployable war file.
 
 And Integrated with travis.ci and coveralls.io for CI.
 
-[Spring-Jawr-Ext3](https://github.com/aquariuslt/spring-jawr-ext)
+[Karma-JAWR-Sample](https://github.com/aquariuslt/karma-jawr-sample)
 
 
 #### Document And Design
