@@ -23,9 +23,9 @@ declare interface JawrContext {
   /* flags */
   skipGenerate?: boolean;                                         //default false, true to skip generating index files
 
-  getRegisteredJsBundleKeys?(): Array;
+  getRegisteredJsBundleKeys?(): Array<string>;
 
-  getLocaleJsBundles?(): Array;
+  getLocaleJsBundles?(): Array<string>;
 }
 
 
@@ -62,6 +62,7 @@ declare interface JawrProperties {
 
 
 declare interface JawrJsBundles {
+  // @ts-ignore
   names: string;
 
   [jawrJsBundleKey: string]: {
@@ -114,6 +115,7 @@ declare interface JawrLocaleMessageProperties {
 
 
 declare interface JawrCssBundles {
+  // @ts-ignore
   names: string;
 
   [jawrCssBundleKey: string]: {
