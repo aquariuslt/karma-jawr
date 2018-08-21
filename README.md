@@ -90,6 +90,9 @@ Please refer to [wiki](https://github.com/aquariuslt/karma-jawr/wiki)
 
 ### Change Log
 
+#### 0.1.14
+- Fix [Issue#2](https://github.com/aquariuslt/karma-jawr/issues/2) fix issue#2: mapping patterns not support /path/to/ to match non-recurring path to a directory and every resource under it will be added to the bundle
+
 #### 0.1.13
 - Update Dependencies version, and README content at npm
 
